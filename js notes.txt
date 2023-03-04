@@ -1,0 +1,125 @@
+note in js:
+
+****queryselector and getelement by id
+
+**** object prototype and prototype inheritance
+
+**** synchronous => allow things happen one at a time.
+
+**** asynchronous => allow multiple things in a sametime.
+
+
+****what is ajax in js
+
+--> AJAX stands for asynchronous javascript and XML
+
+--> AJAX in not a programing language. rather, it's set of existing technologies.
+
+--> AJAX helps in fetching data asynchronus without interfering with the existing page.
+
+--> AJAX no page reload/refresh
+
+--> modern websites use JSON instead or XML for data transfer.
+
+why use AJAX?
+
+1 no page reload/refresh
+2 saves the bandwidth.
+ajax use the XMLHttpRequest to get the data from the server.
+
+-->modern websites use JSON instead or XML for data transfer
+
+**** what is JSON in js
+
+=> JSON is a format for storing and transporting data.
+
+=>JSON is often used when data is sent from a server to a web page
+
+
+
+****readystate value in xhr
+0 => unset ,"client create but open() not called"
+1 => opened 
+2 => headers_received ,"send() has been called"
+3 => loading ,"downloading ; responseText "
+4 => done ,"the operation is complate."
+4 =>done
+
+ex=>
+xhr.open('GET','harry.txt',true);
+xhr.send();
+true => means asnchronous in unblocking
+false => means snchronous in blocking
+
+****getResponseHeader means data send in url(link)
+****setRequestHeader means data send in url
+
+****promises
+1 resolve
+2 reject
+3 pending
+
+***arrow function
+//one liners do not require braces/return
+// one line will automatically return
+
+****async is return promises
+
+**** await => The await operator is used to wait for a Promise . It can only be used inside an async function within regular JavaScript code; 
+
+****error handling
+finally => this block is always execute
+throw => the throw statment allow you to create a custom error
+
+****regular expression
+=> Regular expressions are patterns used to match character combinations in strings. 
+
+regExp. source =>source is a read-only string property of RegExp objects
+***regular expression function:
+// 1. exec() -this function will return an array for match or null for no match
+// 2. test() - return true or false
+//3. match() - it will return arry of reuslts or null
+//4. search() - return index of first match else -1
+//5. replace() -returns new replaced string with all the replasement  (if no global flag is given ,first  match will be replaced)
+
+****regular expression metacharacter 
+
+regex = /^harr/; //^ means  expression will match if string  start with
+regex = /ry$/; //$ at the end of the string means "string ends with "
+regex = /h.rry/; //. matches any one character 
+regex = /h*rry/; //* matches 0 or more character 
+regex = /ha?rryi?/; //? after character means that character is optional
+regex = /h\*rry/;  // \* allows asterik in the text. 
+
+****regular expression character set
+
+//character sets -we use []
+//quantifiers -we use {}
+//groupings  -we use prantheses for groupings ()
+
+//iterators operator
+// Iterator is an object which allows us to access a collection of objects one at a time.
+
+//*******for in loop****** */
+//in programming, loops are used to repeat a block of code
+//for/in - loops through the properties of an object
+
+//The for..in loop in JavaScript allows you to iterate over all property keys of an object.
+
+//*****for of loop*****
+=> The for..of loop in JavaScript allows you to iterate over iterable objects (arrays, sets, maps, strings etc...)
+
+//****map in javascript***//
+//maps in javascript : we can use any type of key or value
+
+//****set in javascript***//
+ //A JavaScript Set is a collection of unique values.
+//set store unique value
+
+//****symbol in javascript***//
+=> Symbols. A “symbol” represents a unique identifier. A value of this type can be created using Symbol() :.
+
+=> Symbol is a primitive data type of JavaScript, along with string, number, boolean, null and undefined.
+//=> Destructuring :- is used to create varibles from array items or object properties.
+
+
