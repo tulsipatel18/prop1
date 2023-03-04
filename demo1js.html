@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="demo1js.css" />
+    <title>demo for javascript</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <h1>Demo in javascript</h1>
+      </div>
+      <div class="arrayDemo">
+        
+        <table>
+          
+          <tr>
+            <th>Method</th>
+            <th>Intilization Array</th>
+            <th>Input Value</th>
+            <th>Button</th>
+            <th>Result</th>
+            <th>Notes</th>
+          </tr>
+          <!-- array push method -->
+          <tr>
+            <td>Push</td>
+            <td id="pushTd">[1,2,3]</td>
+            <td>
+              <input
+                type="text"
+                name="user"
+                class="userValue"
+                id="inputValue"
+              />
+            </td>
+            <td>
+              <input type="button" class="btn" value="Excute" id="pushValue" />
+            </td>
+            <td id="result"></td>
+            <td>
+              The <b><code>push()</code></b> method adds new items to the end of
+              an array.
+            </td>
+          </tr>
+          <!-- array pop -->
+          <tr>
+            <td>Pop</td>
+            <td id="popTd">[1,2,3]</td>
+            <td>-</td>
+            <td>
+              <input type="button" value="Excute" class="btn" id="popValue" />
+            </td>
+            <td id="result1"></td>
+            <td>
+              The <b><code>pop()</code></b> method removes the last element of
+              an array.
+            </td>
+          </tr>
+          <!-- array unshift -->
+          <tr>
+            <td>unShift</td>
+            <td id="unshiftTd">[1,2,3]</td>
+            <td>
+              <input
+                type="text"
+                name="user"
+                class="userValue"
+                id="firstAddValue"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="Excute"
+                class="btn"
+                id="unshiftValue"
+              />
+            </td>
+            <td id="result2"></td>
+            <td>
+              The <b><code>unshift()</code></b> method adds new items to the
+              beginning of an array
+            </td>
+          </tr>
+          <!-- array shift -->
+          <tr>
+            <td>Shift</td>
+            <td id="popTd">[1,2,3]</td>
+            <td>-</td>
+            <td>
+              <input type="button" value="Excute" class="btn" id="shiftValue" />
+            </td>
+            <td id="result3"></td>
+            <td>
+              The <b><code>shift()</code></b> method removes the first element
+              from an array.
+            </td>
+          </tr>
+          <!-- array concat -->
+          <tr>
+            <td>Concat</td>
+            <td id="concatTd">[1,2,3]</td>
+            <td>['a','b','c']</td>
+            <td>
+              <input
+                type="button"
+                value="Excute"
+                class="btn"
+                id="concatValue"
+              />
+            </td>
+            <td id="result4"></td>
+            <td>
+              The <b><code>concat()</code></b> method concatenates (joins) two
+              or more arrays
+            </td>
+          </tr>
+          <!-- array entries -->
+          <tr>
+            <td>entries</td>
+            <td id="entriesTd">['a','b','c']</td>
+            <td>-</td>
+            <td>
+              <input
+                type="button"
+                value="Excute"
+                class="btn"
+                id="entriesValue"
+              />
+            </td>
+            <td id="result5"></td>
+            <td>
+              The <b><code>entries()</code></b> method returns a new Array
+              Iterator object that contains the key/value pairs for each index
+              in the array.
+            </td>
+          </tr>
+          <!-- array find -->
+          <tr>
+            <td>find</td>
+            <td id="findTd">[10,20,30]</td>
+            <td>
+              <input type="text" name="user" class="userValue" id="findValue" />
+            </td>
+            <td>
+              <input type="button" value="Excute" class="btn" id="fiValue" />
+            </td>
+            <td id="result6"></td>
+            <td>
+              The <b><code>find()</code></b> method returns the first element in
+              the provided array, If no values satisfy the testing function,
+              undefined is returned.
+            </td>
+          </tr>
+          <!-- array findindex -->
+          <tr>
+            <td>findIndex</td>
+            <td id="findIndexTd">[10,20,30]</td>
+            <td>
+              <input
+                type="text"
+                name="user"
+                class="userValue"
+                id="findIndexValue"
+              />
+            </td>
+            <td>
+              <input type="button" value="Excute" class="btn" id="fiInValue" />
+            </td>
+            <td id="result7"></td>
+            <td>
+              The <b><code>findIndex()</code></b> method returns the index of
+              the first element in an array, If no elements satisfy the testing
+              function, -1 is returned.
+            </td>
+          </tr>
+          <!-- array findLast -->
+          <tr>
+            <td>findLast</td>
+            <td>[10,20,30,40,50]</td>
+            <td>-</td>
+            <td>
+              <input type="button" value="Excute" class="btn" id="fiLaValue" />
+            </td>
+            <td id="result8"></td>
+            <td>
+              The <b><code>findLast()</code></b> method returns the value of the
+              last element in an array, If no elements satisfy the testing
+              function, undefined is returned.
+            </td>
+          </tr>
+          <!-- array findlastindex -->
+          <tr>
+            <td>findLastIndex</td>
+            <td>[10,20,30,40,]</td>
+            <td>-</td>
+            <td>
+              <input
+                type="button"
+                value="Excute"
+                class="btn"
+                id="fiLaIndexValue"
+              />
+            </td>
+            <td id="result9"></td>
+            <td>
+              The <b><code>findLastIndex()</code></b> method returns the index
+              of the last element in an array, If no elements satisfy the
+              testing function, -1 is returned.
+            </td>
+          </tr>
+          <!-- array flat -->
+          <tr>
+            <td>flat</td>
+            <td>['a','b','c', [1,2,3]]</td>
+            <td>-</td>
+            <td>
+              <input type="button" value="Excute" class="btn" id="flatValue" />
+            </td>
+            <td id="result10"></td>
+            <td>
+              The <b><code>flat()</code></b> method creates a new array with all
+              sub-array elements concatenated into it recursively up to the
+              specified depth.
+            </td>
+          </tr>
+          <!-- array include -->
+          <tr>
+            <td>Includes</td>
+            <td>['a','b','c']</td>
+            <td>
+              <input
+                type="text"
+                name="user"
+                class="userValue"
+                id="includeValue"
+              />
+            </td>
+            <td>
+              <input type="button" value="Excute" class="btn" id="iValue" />
+            </td>
+            <td id="result11"></td>
+            <td>
+              The <b><code>includes()</code></b> method determines whether an
+              array includes a certain value among its entries, returning true
+              or false as appropriate.
+            </td>
+          </tr>
+          <!-- array indexof -->
+          <tr>
+            <td>indexOf</td>
+            <td>['a','b','c']</td>
+            <td>
+              <input
+                type="text"
+                name="user"
+                class="userValue"
+                id="indexValue"
+              />
+            </td>
+            <td>
+              <input type="button" value="Excute" class="btn" id="inValue" />
+            </td>
+            <td id="result12"></td>
+            <td>
+              The <b><code>indexOf()</code></b> method returns the first index
+              at which a given element can be found in the array, or -1 if it is
+              not present.
+            </td>
+          </tr>
+          <!-- array join -->
+          <tr>
+            <td>Join</td>
+            <td>['at','kt']</td>
+            <td>-</td>
+            <td>
+              <input type="button" value="Excute" class="btn" id="joinValue" />
+            </td>
+            <td id="result13"></td>
+            <td>
+              The <b><code>join()</code></b> method returns an array as a
+              string. The join() method does not change the original array. Any
+              separator can be specified.
+            </td>
+          </tr>
+          <!-- array keys -->
+          <tr>
+            <td>Keys</td>
+            <td>['a','b','c']</td>
+            <td>-</td>
+            <td>
+              <input type="button" value="Excute" class="btn" id="keysValue" />
+            </td>
+            <td id="result14"></td>
+            <td>
+              The <b><code>keys()</code></b> method returns a new Array Iterator
+              object that contains the keys for each index in the array.
+            </td>
+          </tr>
+          <!-- array lastindexof -->
+          <tr>
+            <td>lastIndexOf</td>
+            <td>['a','b','c','a']</td>
+            
+            <td>
+              <input
+                type="text"
+                name="user"
+                class="userValue"
+                id="lastIndexOfValue"
+              />
+            </td>
+            <td>
+              <input type="button" value="Excute" class="btn" id="laInValue" />
+            </td>
+            <td id="result15"></td>
+            <td>The <b><code>lastIndexOf()</code></b> method returns the last index at which a given element can be found in the array, or -1 if it is not present.</td>
+          </tr>
+          <!-- array foreach -->
+          <tr>
+            <td>
+                forEach
+            </td>
+            <td>[1,2,3]</td>
+            <td>-</td>
+            <td>
+                <input type="button" value="Excute" class="btn" id="forEachValue" />
+              </td>
+              <td id="result16"></td>
+              <td>The <b><code>forEach()</code></b> method executes a provided function once for each array element.</td>
+          </tr>
+          <!-- array array.of -->
+          <tr>
+            <td>Array.of</td>
+            <td>-</td>
+            <td><input
+                type="text"
+                name="user"
+                class="userValue"
+                id="arrOfValue"
+              /></td>
+              <td>
+                <input type="button" value="Excute" class="btn" id="aOfValue" />
+              </td>
+              <td id="result17"></td>
+              <td>The <b><code>Array.of()</code></b> method creates a new Array instance from a variable number of arguments, regardless of number or type of the arguments.</td>
+          </tr>
+          <!-- array reduce -->
+          <tr>
+            <td>reduce</td>
+            <td>[1,2,3,4,5]</td>
+            <td>-</td>
+            <td>
+                <input type="button" value="Excute" class="btn" id="reduceValue" />
+              </td>
+              <td id="result18"></td>
+              <td>The <b><code>reduce()</code></b> method executes a reducer function for array element. The reduce() method returns a single value: the function's accumulated result.</td>
+          </tr>
+          <!-- array reverse -->
+          <tr>
+            <td>reverse</td>
+            <td>['a','b','c']</td>
+            <td>-</td>
+            <td>
+                <input type="button" value="Excute" class="btn" id="reverseValue" />
+              </td>
+              <td id="result19"></td>
+              <td>The <b><code>reverse()</code></b> method reverses an array, the first array element now becoming the last, and the last array element becoming the first.</td>
+          </tr>
+          <!-- array slice -->
+          <tr>
+            <td>slice</td>
+            <td>['at','kt','mt','st']</td>
+            <td><input
+                type="text"
+                name="user"
+                class="userValue"
+                id="sliceValue"
+              /></td>
+              <td>
+                <input type="button" value="Excute" class="btn" id="sliValue" />
+              </td>
+              <td id="result20"></td>
+              <td>The <b><code>slice()</code></b> method returns a shallow copy of a portion of an array into a new array object selected from start to end</td>
+
+          </tr>
+          <!-- array sort -->
+          <tr>
+            <td>sort</td>
+            <td>['March','Jan','Feb','Dec']</td>
+            <td>-</td>
+            <td>
+                <input type="button" value="Excute" class="btn" id="sortValue" />
+              </td>
+              <td id="result21"></td>
+              <td>The <b><code>sort() </code></b> sorts the elements as strings in alphabetical and ascending order</td>
+          </tr>
+          <!-- array splice -->
+          <tr>
+            <td>splice</td>
+            <td>['ab','bc','cd']</td>
+            <td>-</td>
+              <td>
+                <input type="button" value="Excute" class="btn" id="spliValue" />
+              </td>
+              <td id="result22"></td>
+              <td>The <b><code>splice()</code></b> method changes the contents of an array by removing or replacing existing elements and/or adding new elements</td>
+          </tr>
+          <!-- array tostring -->
+          <tr>
+            <td>toString</td>
+            <td>[1,2,'a','b']</td>
+            <td>-</td>
+            <td>
+                <input type="button" value="Excute" class="btn" id="toStringValue" />
+              </td>
+              <td id="result23"></td>
+              <td>The <b><code>toString()</code></b> method returns a string representing the specified array and its elements.</td>
+
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="demo1js.js"></script>
+</html>

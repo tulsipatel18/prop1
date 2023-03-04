@@ -1,0 +1,64 @@
+body {
+  background-color: #43ab9c;
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  text-align: center;
+  padding: 20px;
+}
+.arrayDemo {
+  padding: 20px;
+}
+table {
+  margin: auto;
+  border-collapse: collapse;
+  font-size: 20px;
+  background-color: #202932;
+  color: rgb(225, 221, 221);
+ height: 100%;
+ width: 100%;
+ max-width: 1150px;
+  border-radius: 7px;
+}
+th {
+  font-size: 22px;
+}
+th,
+td {
+  border-left: 1px solid #aaaeb1;
+  text-align: center;
+  padding: 15px 15px;
+}
+tr:nth-child(even) {
+  background-color: #2c3846;
+}
+.btn {
+  font-size: 22px;
+  border: none;
+  border-radius: 7px;
+  background-color: #32786e;
+  color: white;
+  font-family: popines;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 7px 15px;
+  cursor: pointer;
+  padding: 5px 14px;
+  margin: 10px auto;
+  
+  width: 100%;
+}
+.userValue {
+  padding: 3px 10px;
+  
+}
+.userValue:focus {
+  background-color: #aaaeb1;
+}
+
